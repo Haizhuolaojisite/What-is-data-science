@@ -4,10 +4,7 @@ Foundational Methodology and CRISP-DM are aligned here. It requires communicatio
 have different objectives, biases, and modalities of relating information. They don’t all see the same things or in the same manner. 
 Without clear, concise, and complete perspective of what the project goals are resources will be needlessly expended. 
 
-Data Understanding 
-Data understanding relies on business understanding. Data is collected at this stage of the process. The understanding of what the 
-business wants and needs will determine what data is collected, from what sources, and by what methods. CRISP-DM combines the stages 
-of Data Requirements, Data Collection, and Data Understanding from the Foundational Methodology outline. 
+
 
 Data Preparation 
 Once the data has been collected, it must be transformed into a useable subset unless it is determined that more data is needed. 
@@ -30,3 +27,67 @@ Deployment
 In the deployment step, the model is used on new data outside of the scope of the dataset and by new stakeholders. 
 The new interactions at this phase might reveal the new variables and needs for the dataset and model. 
 These new challenges could initiate revision of either business needs and actions, or the model and data, or both.
+
+From understanding to approach:
+1.Business understanding:
+  what is the problem that you are trying to solve?
+  
+2.Analytic approach:
+  How can you use data to answer the question?
+  If the question is to determine probabilities of an action--->use a Predictive model
+  If the question is to show relationships--->use a descriptive model
+  If the question requires a yes/no answer--->use a classification model
+  
+  Machine Learning:
+  1. Learning without being explicitly programmed
+  2. Identifies relationships and trends in data that might otherwise not be accessible or identified
+  3. Uses clustering association approaches
+  
+ 3. Data requirements:
+    Content, formats, representations suitable for decision tree classifier
+    
+ 4. Data collection:
+    Available data sources
+    It's alright to defer decisions about unavailable data, and attempt to accquire it at a later stage.
+    Merging data, eliminate redundant data
+    The understanding of what the business wants and needs will determine what data is collected, from what sources, and by what methods. 
+ 
+ 5.Data Understanding 
+Data understanding relies on business understanding. Data is collected at this stage of the process. 
+
+CRISP-DM combines the stages of Data Requirements, Data Collection, and Data Understanding from the Foundational Methodology outline.
+
+Is the data that you collected representative of the problem to be solved?
+
+Descriptive statistics
+  univariate statistics (mean, max...)
+  pairwise correlations (redundant?)
+  histogram (distribution)
+Data quality
+  missing values; Invalid or misleading values
+Iterative data collection and understanding (more understanding, more refinement can be done to the model)
+
+6. Data preparation
+Examples of data cleansing: invalid values (2020 02 33); missing data; remove duplicates; formating(CA, CAN, CANADA)
+
+Feature engineering is the process of using domain knowledge of the data to create features that 
+make the machine learing algorithms work.
+
+Feature engineering is critical when machine learning tools are being applied to analyze data.
+
+7. Modeling
+
+8. Evaluation
+Does the model used really answer the initial question or does it need to be adjusted?
+
+ROC curve; False-positive and False-negative type error
+
+9. Deployment
+Once the model is evaluated and the data scientist is confidnet it will work, it is deployed and put to
+the ultimate test. Actual real-time use in the field
+
+10. Feedback
+
+
+
+
